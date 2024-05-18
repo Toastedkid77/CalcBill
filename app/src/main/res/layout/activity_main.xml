@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+
+    android:background="@color/simplebackgroundcolor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textViewElectricCalculatorBill"
+            android:layout_width="157dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginBottom="49dp"
+            android:text="Electric Calculator Bill"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextKwh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ToolbarStyle"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="32dp"
+            android:text="Total"
+            app:layout_constraintBottom_toTopOf="@+id/textViewFinalCost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewFinalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="36dp"
+            android:text="Final Cost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTotal" />
+
+
+
+        <EditText
+            android:id="@+id/editTextKwh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="44dp"
+            android:ems="10"
+            android:hint="Electric unit used(Kwh)"
+            android:inputType="numberDecimal"
+            android:textColor="#18225A"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumberRebate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewElectricCalculatorBill" />
+
+        <EditText
+            android:id="@+id/editTextNumberRebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="133dp"
+            android:ems="10"
+            android:hint="Rebate percentage (0-5%)"
+            android:inputType="numberDecimal"
+            android:textColor="#18225A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextKwh" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="42dp"
+            android:text="Calculate"
+            app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberRebate" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="250dp"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberRebate"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

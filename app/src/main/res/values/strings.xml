@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalcBill</string>
+    <string name="Calculator">CalcBill</string>
+    <string name="copyright">Copyright (c) Eirene 2024</string>
+    <string name="matricesnumber">2022738905</string>
+    <string name="name">EIRENE BETRIENA BIINTI MUHAMMAD KAMARUL</string>
+    <string name="about">This is a simple apps about Electric bill calculator</string>
+    <string name="clas">RCS2515A</string>
+    <string name="course">CS251</string>
+</resources>
