@@ -7,4 +7,7 @@
     <string name="about">This is a simple apps about Electric bill calculator</string>
     <string name="clas">RCS2515A</string>
     <string name="course">CS251</string>
+    <string name="source_code"><a href ="https://github.com/Toastedkid77/ElectricCalculator">Github</a>
+
+    </string>
 </resources>

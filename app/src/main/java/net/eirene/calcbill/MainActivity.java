@@ -1,98 +1,9 @@
 package net.eirene.calcbill;
 
-//import android.content.Intent;
-//import android.os.Bundle;
-//import android.view.Menu;
-//import android.view.MenuInflater;
-//import android.view.MenuItem;
-//import android.widget.Button;
-//import android.widget.EditText;
-//import android.widget.TextView;
-//import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-//public class MainActivity extends AppCompatActivity {
-
-//    private TextView TextViewTotal, TextViewFinalcost
-//    private EditText editTextkwh, editTextumberrebate,
-//    private Button buttonCalculate, buttonReset
-
-//    private EditText editTextKwh, editTextNumberRebate;
-//    private TextView textViewTotal, textViewFinalCost;
-//    private Button buttonCalculate, buttonReset;
-
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
-//        setContentView(R.layout.activity_main);
-
-//        btnCalculate = findViewById(R.id.btnCalculate);
-//        etNumber2 = findViewById(R.id.etNumber2);
-//        atNumber1 = findViewById(R.id.etNumber1);
-//        textview = findViewById(R.id.textview);
-//        btnCalculate.setOnClickListener(this);
-
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-//        setSupportActionBar(myToolbar);
-
-//            textviewElectricCalculatorBill = findViewById(R.id.textViewElectricCalculatorBill);
-//            TextViewTotal = findViewById(R.id.textViewTotal)
-//            TextViewFinalcost = findViewById(R.id.textViewFinalcost)
-//            editTextkwh = findViewById(R.id.editTextKwh)
-//            editTextumberrebate = findViewById(R.id.editTextNumberRebate)
-//            buttonCalculate = findViewById(R.id.buttonCalculate)
-//            buttonReset = findViewById(R.id.buttonReset)
-
-//    }
-
-
-//     @Override
-//     public boolean onCreateOptionsMenu(Menu menu) {
-//            MenuInflater inflater = getMenuInflater();
-//           inflater.inflate(R.menu.menu, menu);
-//            return true;
-//     }
-
-
-
-//     @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int selected = item.getItemId();
-
-//        if(selected == R.id.menuAbout) {
-//            Toast.makeText( this, "about clicked",Toast.LENGTH_SHORT).show();
-//            openAboutPage();
-//            return true;
-
-//        }
-//        return true;
-//    }
-
-//    private void openAboutPage() {
-//        Intent intent = new Intent(MainActivity.this, About.class);
-//        startActivity(intent);
-
-//    }
-//    private void SHOW() {
-
-//   }
-//}
-//}
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -127,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         editTextNumberRebate = findViewById(R.id.editTextNumberRebate);
         buttonCalculate = findViewById(R.id.buttonCalculate);
         buttonReset = findViewById(R.id.buttonReset);
-
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
